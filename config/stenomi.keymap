@@ -10,15 +10,22 @@
 
 
 / { 
-        keymap {
-                compatible = "zmk,keymap";
-                
-                default_layer {
-                bindings = <
-                X1 S1- T- P- H- *1 *3 -F -P -L -T -D
-                X2 S2- K- W- R- *2 *4 -R -B -G -S -Z
-                         #  A   O  E  U  #
+        
+keymap {
+        compatible = "zmk,keymap";
 
+        default_layer {
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |    X1    |    S1-   |    T-    |    P-    |    H-    |    *1    |    *3    |    -F    |    -P    |    -L    |    -T    |    -D    |
+// |    X2    |    S2-   |    K-    |    W-    |    R-    |    *2    |    *4    |    -R    |    -B    |    -G    |    -S    |    -Z    |
+// |          |          |          |    #     |    A     |    O     |     E    |     U    |     #    |          |          |          |          
+//                          
+            bindings = <
+    &kp X1    &kp S1-    &kp T-    &kp P-     &kp H-     &kp *1      &kp *3     &kp -F     &kp -P     &kp -L     &kp -T    &kp -D
+    &kp X2    &kp S2-    &kp K-    &kp W-     &kp R-     &kp *2      &kp *4     &kp -R     &kp -B     &kp -G     &kp -S    &kp -Z
+                                   &kp #      &kp A      &kp O       &kp E      &kp U      &kp #      
+
+                         
                 >;
                 };
         
