@@ -36,7 +36,7 @@
 //   	                       |   BCSP  |   SPC   |   ESC   |                   |   ENT   |   SPC   |   BCSP   |
       bindings = <
       &tog QWER  &kp Q  &kp W  &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BACKSPACE
-      &kp  SPACE &kp A  &kp S  &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp W &kp SHIFT
+      &kp  SPACE &kp A  &kp S  &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp W &kp LSHIFT
             &kp BACKSPACE &kp SPACE &kp ESC  &kp ENTER &kp SPACE &kp BACKSPACE
      >;
 };
