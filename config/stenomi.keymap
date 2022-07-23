@@ -26,6 +26,8 @@
       &kp PLV_X2 &kp PLV_SL  &kp PLV_KL  &kp PLV_WL  &kp PLV_RL  &kp PLV_ST  &kp PLV_ST   &kp PLV_RR &kp PLV_BR &kp PLV_GR &kp PLV_SR  &kp PLV_ZR  &kp PLV_X6 
                                          &kp PLV_X3  &kp PLV_A   &kp PLV_O   &kp PLV_E    &kp PLV_U  &kp PLV_X4
     >;
+    
+};
 		QWER_layer {
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
