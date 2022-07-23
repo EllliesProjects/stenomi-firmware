@@ -1,11 +1,13 @@
-manifest:
-  remotes:
-    - name: dnaq
-      url-base: https://github.com/dnaq
-  projects:
-    - name: zmk
-      remote: dnaq
-      revision: plover-hid-hog-attempt
-      import: app/west.yml
-  self:
-    path: config
+manifest: 
+	remotes:
+		- name: zmkfirmware 
+		  url-base: https://github.com/zmkfirmware 
+		- name: dnaq 
+		  url-base: https://github.com/dnaq 
+	projects: 
+		- name: zmk 
+		  remote: dnaq 
+		  revision: plover-hid-hog-attempt 
+		  import: app/west.yml 
+	self: 
+		path: config
