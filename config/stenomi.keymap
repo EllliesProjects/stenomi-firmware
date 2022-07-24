@@ -6,21 +6,117 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
+#define PLOVER 0
+#define QWER 1
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |     0    |    1    |    2    |    3    |    4    |     5     |                   |     6     |    7    |    8    |    9    |   10    |   11    |
+// |    12    |   13    |   14    |   15    |   16    |     17    |                   |     18    |   19    |   20    |   21    |   22    |   23    |
+//   	                          |   24    |   25    |    26     |                   |    27     |   28    |   29    |  
+/ {
 
 
-/ { 
         keymap {
                 compatible = "zmk,keymap";
-                
-                default_layer {
-                bindings = <
-                &kp PLV_X1 &kp PLV_S1 &kp PLV_TL &kp PLV_PL &kp PLV_HL &kp PLV_ST1              &kp PLV_ST3 &kp PLV_FR &kp PLV_PR &kp PLV_LR &kp PLV_TR &kp PLV_DR
-                &kp PLV_X2 &kp PLV_S2 &kp PLV_KL &kp PLV_WL &kp PLV_RL &kp PLV_ST2              &kp PLV_ST4 &kp PLV_RR &kp PLV_BR &kp PLV_GR &kp PLV_SR &kp PLV_ZR
-                                                                         &kp PLV_NA &kp PLV_A   &kp PLV_O               &kp PLV_E  &kp PLV_U  &kp PLV_NB
+		
+                plover_layer {
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |   QWER   |    S    |    T    |    P    |    H    |    ST1    |                   |    ST3    |    F    |    P    |    L    |    T    |    D    |
+// |   PWR    |    S    |    K    |    W    |    R    |    ST2    |                   |    ST4    |    R    |    B    |    G    |    S    |    Z    |
+//   	                          |    #    |    A    |     O     |                   |    E      |    U    |    #    |  
 
-                >;
-                };
-        
-        };
+    bindings = <
+      &tog QWER  &kp PLV_SL  &kp PLV_TL  &kp PLV_PL  &kp PLV_HL  &kp PLV_ST  &kp PLV_ST   &kp PLV_FR &kp PLV_PR &kp PLV_LR &kp PLV_TR  &kp PLV_DR  &kp PLV_X2 
+      &kp K_PWR  &kp PLV_SL  &kp PLV_KL  &kp PLV_WL  &kp PLV_RL  &kp PLV_ST  &kp PLV_ST   &kp PLV_RR &kp PLV_BR &kp PLV_GR &kp PLV_SR  &kp PLV_ZR  &kp PLV_X3 
+                                         &kp PLV_NM  &kp PLV_A   &kp PLV_O   &kp PLV_E    &kp PLV_U  &kp PLV_NM
+    >;
+    
 };
+		QWER_layer {
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+// |   QWER |   Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |   Backspace |
+// |   SPC  |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    :    |    Enter    |
+// |   PWR  |   Z    |    X    |    C    |    V    |    B    |                   |    N    |    M    |    <    |    >    |    /    |    Shift    |
+//   	                       |   BCSP  |   SPC   |   ESC   |                   |   ENT   |   SPC   |   BCSP   |	       
+//                                    
+      bindings = <
+      &tog QWER  &kp Q  &kp W  &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BACKSPACE
+      &kp  K_PWR &kp Z  &kp X  &kp C &kp V &kp G &kp B &kp N &kp M &kp LESS_THAN &kp GREATER_THAN &kp LSHIFT
+            &kp BACKSPACE &kp SPACE &kp ESC  &kp ENTER &kp SPACE &kp BACKSPACE
+     >;
+};
+	};
+
+    combos {
+        compatible = "zmk,combos";
+        combo_a {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <1 13>;
+            bindings = <&kp A>;
+	    	};
+	 combo_s {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <2 14>;
+            bindings = <&kp S>;
+	    	};
+	 combo_d {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <3 15>;
+            bindings = <&kp D>;
+	    	};
+	 combo_f {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <4 16>;
+            bindings = <&kp F>;
+	    	};
+	 combo_g {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <5 17>;
+            bindings = <&kp G>;
+	    	};
+	 combo_h {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <6 18>;
+            bindings = <&kp H>;
+	    	};
+	 combo_j {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <7 19>;
+            bindings = <&kp J>;
+	    	};
+	 combo_k {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <8 20>;
+            bindings = <&kp K>;
+	    	};
+	 combo_l {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <9 21>;
+            bindings = <&kp L>;
+	    	};
+	 combo_colon {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <10 22>;
+            bindings = <&kp COLON>;
+	    	};
+	 combo_enter {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <11 23>;
+            bindings = <&kp ENTER>;
+	    	};
+	
+    };
+       		   
+	};
