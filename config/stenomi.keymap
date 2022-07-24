@@ -35,9 +35,12 @@
 		QWER_layer {
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//                                                                                                                              | Ctrl |   
 // |   QWER |   Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |   Backspace |
-// |   SPC    |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    /    |    Shift    |
-//   	                       |   BCSP  |   SPC   |   ESC   |                   |   ENT   |   SPC   |   BCSP   |
+// |   SPC  |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    :    |    Enter    |
+// |        |   Z    |    X    |    C    |    V    |    B    |                   |    N    |    M    |    <    |    >    |    /    |    Shift    |
+//   	                       |   BCSP  |   SPC   |   ESC   |                   |   ENT   |   SPC   |   BCSP   |	        | Shift |
+//                                    
       bindings = <
       &tog QWER  &kp Q  &kp W  &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BACKSPACE
       &kp  SPACE &kp Z  &kp X  &kp C &kp V &kp G &kp B &kp N &kp M &kp LESS_THAN &kp GREATER_THAN &kp LSHIFT
@@ -51,15 +54,70 @@
         combo_a {
             timeout-ms = <50>;
 	    layers = <1>;
-            key-positions = <1 2>;
+            key-positions = <1 13>;
             bindings = <&kp A>;
 	    	};
 	 combo_s {
             timeout-ms = <50>;
 	    layers = <1>;
-            key-positions = <2 3>;
+            key-positions = <2 14>;
             bindings = <&kp S>;
 	    	};
+	 combo_d {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <3 15>;
+            bindings = <&kp D>;
+	    	};
+	 combo_f {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <4 16>;
+            bindings = <&kp F>;
+	    	};
+	 combo_g {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <5 17>;
+            bindings = <&kp G>;
+	    	};
+	 combo_h {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <6 18>;
+            bindings = <&kp H>;
+	    	};
+	 combo_j {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <7 19>;
+            bindings = <&kp J>;
+	    	};
+	 combo_k {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <8 20>;
+            bindings = <&kp K>;
+	    	};
+	 combo_l {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <9 21>;
+            bindings = <&kp L>;
+	    	};
+	 combo_colon {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <2 14>;
+            bindings = <&kp COLON>;
+	    	};
+
+
+
+
+
+
+	
     };
        		
 	
