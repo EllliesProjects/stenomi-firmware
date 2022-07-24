@@ -46,7 +46,7 @@
         combo_esc {
             timeout-ms = <50>;
             key-positions = <1 2>;
-	    layers = <1>
+	    layers = <1>;
             bindings = <&kp A>;
 	    
         };
