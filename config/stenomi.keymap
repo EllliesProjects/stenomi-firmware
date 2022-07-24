@@ -40,19 +40,20 @@
             &kp BACKSPACE &kp SPACE &kp ESC  &kp ENTER &kp SPACE &kp BACKSPACE
      >;
 };
+	};
 
-  //  combos {
-    //    compatible = "zmk,combos";
-      //  combo_esc {
-        //    timeout-ms = <50>;
-	  //  layers = <1>;
- //           key-positions = <1 2>;
-  //          bindings = <&kp A>;
-//	    
-//        };
- //   };
+    combos {
+        compatible = "zmk,combos";
+        combo_a {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <1 2>;
+            bindings = <&kp A>;
+	    
+        };
+    };
        		
-		};
+	
 		
 		
         
