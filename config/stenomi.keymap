@@ -9,6 +9,10 @@
 #define PLOVER 0
 #define QWER 1
 
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |     0    |    1    |    2    |    3    |    4    |     5     |                   |     6     |    7    |    8    |    9    |   10    |   11    |
+// |    12    |   13    |   14    |   15    |   16    |     17    |                   |     18    |   19    |   20    |   21    |   22    |   23    |
+//   	                          |   24    |   25    |    26     |                   |    27     |   28    |   29    |  
 / {
 
 
@@ -24,7 +28,7 @@
     bindings = <
       &tog QWER  &kp PLV_SL  &kp PLV_TL  &kp PLV_PL  &kp PLV_HL  &kp PLV_ST  &kp PLV_ST   &kp PLV_FR &kp PLV_PR &kp PLV_LR &kp PLV_TR  &kp PLV_DR  &kp PLV_X2 
       &kp PLV_X1 &kp PLV_SL  &kp PLV_KL  &kp PLV_WL  &kp PLV_RL  &kp PLV_ST  &kp PLV_ST   &kp PLV_RR &kp PLV_BR &kp PLV_GR &kp PLV_SR  &kp PLV_ZR  &kp PLV_X3 
-                                         &kp PLV_NA  &kp PLV_A   &kp PLV_O   &kp PLV_E    &kp PLV_U  &kp PLV_NB
+                                         &kp PLV_X4  &kp PLV_A   &kp PLV_O   &kp PLV_E    &kp PLV_U  &kp PLV_X5
     >;
     
 };
