@@ -108,20 +108,16 @@
 	 combo_colon {
             timeout-ms = <50>;
 	    layers = <1>;
-            key-positions = <2 14>;
+            key-positions = <10 22>;
             bindings = <&kp COLON>;
 	    	};
-
-
-
-
-
-
+	 combo_enter {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <11 23>;
+            bindings = <&kp ENTER>;
+	    	};
 	
     };
-       		
-	
-		
-		
-        
+       		   
 	};
