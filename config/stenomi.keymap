@@ -7,8 +7,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #define PLOVER 0
-#define QWER 1
-
+#define QWER   1
+#degine NAV    2
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |     0    |    1    |    2    |    3    |    4    |     5     |                   |     6     |    7    |    8    |    9    |   10    |   11    |
 // |    12    |   13    |   14    |   15    |   16    |     17    |                   |     18    |   19    |   20    |   21    |   22    |   23    |
@@ -21,12 +21,12 @@
 		
                 plover_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |   QWER   |    S    |    T    |    P    |    H    |    ST1    |                   |    ST3    |    F    |    P    |    L    |    T    |    D    |
+// |   NAV    |    S    |    T    |    P    |    H    |    ST1    |                   |    ST3    |    F    |    P    |    L    |    T    |    D    |
 // |   CLEAR  |    S    |    K    |    W    |    R    |    ST2    |                   |    ST4    |    R    |    B    |    G    |    S    |    Z    |
 //   	                          |    #    |    A    |     O     |                   |    E      |    U    |    #    |  
 
     bindings = <
-      &tog QWER  &kp PLV_SL  &kp PLV_TL  &kp PLV_PL  &kp PLV_HL  &kp PLV_ST  &kp PLV_ST   &kp PLV_FR &kp PLV_PR &kp PLV_LR &kp PLV_TR  &kp PLV_DR  
+      &td0       &kp PLV_SL  &kp PLV_TL  &kp PLV_PL  &kp PLV_HL  &kp PLV_ST  &kp PLV_ST   &kp PLV_FR &kp PLV_PR &kp PLV_LR &kp PLV_TR  &kp PLV_DR  
       &bt BT_CLR &kp PLV_SL  &kp PLV_KL  &kp PLV_WL  &kp PLV_RL  &kp PLV_ST  &kp PLV_ST   &kp PLV_RR &kp PLV_BR &kp PLV_GR &kp PLV_SR  &kp PLV_ZR  
                                          &kp PLV_NM  &kp PLV_A   &kp PLV_O   &kp PLV_E    &kp PLV_U  &kp PLV_NM
     >;
@@ -35,15 +35,28 @@
 		QWER_layer {
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-// |   QWER |   Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |   Backspace |
+// |   NAV  |   Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |   Backspace |
 // |   SPC  |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    :    |    Enter    |
 // |  Clear |   Z    |    X    |    C    |    V    |    B    |                   |    N    |    M    |    <    |    >    |    /    |    Shift    |
 //   	                       |   BCSP  |   SPC   |   ESC   |                   |   ENT   |   SPC   |   BCSP   |	       
 //                                    
       bindings = <
-      &tog QWER  &kp Q  &kp W  &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P &kp BACKSPACE
+      &td0       &kp Q  &kp W  &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P &kp BACKSPACE
       &bt BT_CLR &kp Z  &kp X  &kp C &kp V &kp B     &kp N &kp M &kp LESS_THAN &kp GREATER_THAN &kp SLASH &kp LSHIFT 
             &kp BACKSPACE &kp SPACE &kp ESC  &kp ENTER &kp SPACE &kp BACKSPACE
+     >;
+};
+		NAV_layer {
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+// |   NAV  |    1   |    2    |    3    |    4    |    5    |                   |    6    |    7    |    8    |    9    |    0    |       &     |
+// | BT_CLR |    AE  |    OE   |   UE    |    S    |    E    |                   |    I    |    J    |    K    |    D    |   COPY  |     PASTE   |
+//   	                       |   CTRL  |  SHIFT  |   ALT   |                   |    ALT  |   .     |    ,    |	       
+//                                    
+      bindings = <
+      &td0       &kp N1  &kp N2  &kp N3 &kp N4 &kp N5     &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp AMPERSAND
+      &bt BT_CLR &kp   &kp X  &kp C &kp S &kp E     &kp I &kp J &kp K &kp D &kp C_AC_COPY &kp C_AC_PASTE  
+            &kp LCTRL &kp LSHIFT &kp LALT  &kp LALT &kp DOT &kp COMMA
      >;
 };
 	};
@@ -120,3 +133,12 @@
     };
        		   
 	};
+behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&tog QWER>, <&tog NAV>, <&tog PLOVER>;
+        };
+    };
