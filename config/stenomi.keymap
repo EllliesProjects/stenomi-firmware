@@ -17,6 +17,15 @@
 //   	                          |   24    |   25    |    26     |                   |    27     |   28    |   29    |  
 / {
 
+behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&tog QWER>, <&tog NAV>, <&tog PLOVER>;
+        };
+    };
 
         keymap {
                 compatible = "zmk,keymap";
@@ -135,12 +144,4 @@
     };
        		   
 	};
-behaviors {
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&tog QWER>, <&tog NAV>, <&tog PLOVER>;
-        };
-    };
+
