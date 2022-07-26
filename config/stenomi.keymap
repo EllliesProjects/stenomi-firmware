@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #define PLOVER 0
 #define QWER   1
-#define NAV    2
+//#define NAV    2
 
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -37,30 +37,30 @@
 		QWER_layer {
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-// |   NAV  |   Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |   Backspace |
-// |   SPC  |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    :    |    Enter    |
-// |  Clear |   Z    |    X    |    C    |    V    |    B    |                   |    N    |    M    |    <    |    >    |    /    |    Shift    |
-//   	                       |   BCSP  |   SPC   |   ESC   |                   |   ENT   |   SPC   |   BCSP   |	       
+// |   NAV  |   Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |       -     |
+// |   SPC  |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    :    |       +     |
+// |  Clear |   Z    |    X    |    C    |    V    |    B    |                   |    N    |    M    |    <    |    >    |    /    |     SHIFT   |
+//   	                       |   BCSP  |   ALT   |   ESC   |                   |   ENT   |   SPC   |   BCSP   |	       
 //                                    
       bindings = <
-      &to 2       &kp Q  &kp W  &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P &kp BACKSPACE
+      &to 0       &kp Q  &kp W  &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P &kp MINUS
       &bt BT_CLR &kp Z  &kp X  &kp C &kp V &kp B     &kp N &kp M &kp LESS_THAN &kp GREATER_THAN &kp SLASH &kp LSHIFT 
-            &kp BACKSPACE &kp SPACE &kp ESC  &kp ENTER &kp SPACE &kp BACKSPACE
+            &kp BACKSPACE &kp LALT   &kp ESC  &kp ENTER &kp SPACE &kp BACKSPACE
      >;
 };
-		NAV_layer {
+//		NAV_layer {
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------  
 // |   NAV  |    1   |    2    |    3    |    4    |    5    |                   |    6    |    7    |    8    |    9    |    0    |       &     |
 // | BT_CLR |    AE  |    OE   |   UE    |    S    |    E    |                   |    I    |    J    |    K    |    D    |     +   |       -     |
 //   	                       |   CTRL  |  SHIFT  |   ALT   |                   |    ALT  |   .     |    ,    |	       
 //                                    
-      bindings = <
-      &to 0       &kp N1  &kp N2  &kp N3 &kp N4 &kp N5     &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp AMPERSAND
-      &bt BT_CLR &kp  Z &kp X  &kp C &kp S &kp E     &kp I &kp J &kp K &kp D &kp PLUS &kp MINUS  
-            &kp LCTRL &kp LSHIFT &kp LALT  &kp LALT &kp DOT &kp COMMA
-     >;
-};
+//      bindings = <
+//      &to 0       &kp N1  &kp N2  &kp N3 &kp N4 &kp N5     &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp AMPERSAND
+//      &bt BT_CLR &kp  Z &kp X  &kp C &kp S &kp E     &kp I &kp J &kp K &kp D &kp PLUS &kp MINUS  
+//            &kp LCTRL &kp LSHIFT &kp LALT  &kp LALT &kp DOT &kp COMMA
+//     >;
+//};
 	};
 
     combos {
@@ -125,11 +125,11 @@
             key-positions = <10 22>;
             bindings = <&kp COLON>;
 	    	};
-	 combo_enter {
+	 combo_plus {
             timeout-ms = <50>;
 	    layers = <1>;
             key-positions = <11 23>;
-            bindings = <&kp ENTER>;
+            bindings = <&kp PLUS>;
 	    	};
 	
     };
