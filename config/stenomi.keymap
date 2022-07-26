@@ -40,12 +40,12 @@
 // |   NAV  |   Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |       -     |
 // |   SPC  |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    :    |       +     |
 // |  Clear |   Z    |    X    |    C    |    V    |    B    |                   |    N    |    M    |    ,    |    .    |    /    |     SHIFT   |
-//   	                       |   BCSP  |   ALT   |   ESC   |                   |   ENT   |   SPC   |   BCSP   |	       
+//   	                       |   CTRL  |   ALT   |   ESC   |                   |   ENT   |   SPC   |   BCSP   |	       
 //                                    
       bindings = <
       &to 0       &kp Q  &kp W  &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P &kp MINUS
       &bt BT_CLR &kp Z  &kp X  &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp LSHIFT 
-            &kp BACKSPACE &kp LALT   &kp ESC  &kp ENTER &kp SPACE &kp BACKSPACE
+            &kp LCTRL &kp LALT   &kp ESC  &kp ENTER &kp SPACE &kp BACKSPACE
      >;
 };
 //		NAV_layer {
