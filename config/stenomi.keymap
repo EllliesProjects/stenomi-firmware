@@ -141,7 +141,7 @@
             timeout-ms = <50>;
 	    layers = <1>;
             key-positions = <4 5>;
-            bindings = <&kp N1>;
+            bindings = <&kp N4>;
 	    	};
 	combo_5 {
             timeout-ms = <50>;
