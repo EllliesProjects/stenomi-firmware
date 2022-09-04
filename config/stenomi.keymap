@@ -8,8 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #define PLOVER 0
 #define QWER   1
-//#define NAV    2
-
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |     0    |    1    |    2    |    3    |    4    |     5     |                   |     6     |    7    |    8    |    9    |   10    |   11    |
@@ -29,7 +27,7 @@
 
     bindings = <
       &to 1       &kp PLV_SL  &kp PLV_TL  &kp PLV_PL  &kp PLV_HL  &kp PLV_ST  &kp PLV_ST   &kp PLV_FR &kp PLV_PR &kp PLV_LR &kp PLV_TR  &kp PLV_DR  
-      &kp BT_CLR  &kp PLV_SL  &kp PLV_KL  &kp PLV_WL  &kp PLV_RL  &kp PLV_ST  &kp PLV_ST   &kp PLV_RR &kp PLV_BR &kp PLV_GR &kp PLV_SR  &kp PLV_ZR  
+      &mt BT_CLR ESC  &kp PLV_SL  &kp PLV_KL  &kp PLV_WL  &kp PLV_RL  &kp PLV_ST  &kp PLV_ST   &kp PLV_RR &kp PLV_BR &kp PLV_GR &kp PLV_SR  &kp PLV_ZR  
                                          &kp PLV_NM  &kp PLV_A   &kp PLV_O   &kp PLV_E    &kp PLV_U  &kp PLV_NM
     >;
     
@@ -45,7 +43,7 @@
 //                                    
       bindings = <
       &to 0       &kp Q  &kp W  &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P &kp MINUS
-      &bt BT_CLR &kp Z  &kp X  &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp PERIOD &kp SLASH &kp LSHIFT 
+      &mt BT_CLR ESC &kp Z  &kp X  &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp PERIOD &kp SLASH &kp LSHIFT 
             &kp LCTRL &kp LALT   &kp ESC  &kp ENTER &kp SPACE &kp BACKSPACE
      >;
 };
