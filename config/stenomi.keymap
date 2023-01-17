@@ -86,7 +86,7 @@
 	combo_tab {
             timeout-ms = <50>;
 	    layers = <1>;
-            key-positions = <25  26>;
+            key-positions = <24  25>;
             bindings = <&kp TAB>;
 	    	};
 	 combo_h {
@@ -182,13 +182,13 @@
 	combo_lt {
             timeout-ms = <50>;
 	    layers = <1>;
-            key-positions = <28  29>;
+            key-positions = <27  28>;
             bindings = <&kp LT>;
 	    	};
 	combo_gt {
             timeout-ms = <50>;
 	    layers = <1>;
-            key-positions = <29  30>;
+            key-positions = <28  29>;
             bindings = <&kp GT>;
 	    	};
     };
