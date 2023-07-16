@@ -17,7 +17,7 @@
 		
                 plover_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |   NAV Part 1  |             													|   NAV Part 2  |
+// |   Clear Part 1  |             													|   Clear Part 2  |
 // |   NAV    |    S    |    T    |    P    |    H    |    ST1    |                   |    ST3    |    F    |    P    |    L    |    T    |    D    |
 // |   ESC    |    S    |    K    |    W    |    R    |    ST2    |                   |    ST4    |    R    |    B    |    G    |    S    |    Z    |
 //   	                          |    #    |    A    |     O     |                   |    E      |    U    |    #    |  
@@ -32,10 +32,10 @@
 		QWER_layer {
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |   NAV Part 1  |             													|   NAV Part 2  |
+// |   Clear Part 1  |             													|   Clear Part 2  |
 //		|    1	  |    2    |    3    |    4    |			      |    5    |    6    |    7    |    8    |    9       |	
 // |   NAV  |   Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |       -     |
-// |  Clear |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    :    |       +     |
+// |   UP   |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    :    |       +     |
 // |   ESC  |   Z    |    X    |    C    |    V    |    B    |                   |    N    |    M    |    ,    |    .    |    /    |     SHIFT   |
 //   	                       |   CTRL  |   ALT   |  Shift  |                   |   ENT   |   SPC   |   BCSP  |	       
 //                                  |   tab   |                                       |    <    |    >    |
@@ -54,6 +54,12 @@
 	    layers = <1>;
             key-positions = <0 11>;
             bindings = <&bt BT_CLR>;
+	    	};
+	combo_up {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <0 12>;
+            bindings = <&bt UP>;
 	    	};
 	combo_a {
             timeout-ms = <50>;
