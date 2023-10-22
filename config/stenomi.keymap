@@ -55,11 +55,11 @@
 // |   Clear Part 1  |             													|   Clear Part 2  |
 //    		 	             										              |   Ctrl  |
 //	    |    1   |    2    |    3    |    4    |	5    |		         |    6    |    7    |    8    |    9    |    0    |	         |
-// |   STEN |   Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |    BCSP     |
-// |   UP   |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    :    |       +     |
-// |   ESC  |   Z    |    X    |    C    |    V    |    B    |                   |    N    |    M    |    <    |    >    |    /    |     ESC     |
-//   	                       |   CTRL  |   ALT   |  Shift  |                   |   ENT   |   SPC   |   BCSP  |	       
-//                                  |   tab   |                                       |    <    |    >    |
+// |   STEN |   !    |    @    |    {    |    }    |    |    |                   |    '    |    +    |    -    |    /    |    *    |     TAB     |
+// |   UP   |   #    |    $    |    (    |    )    |    `    |                   |    H    |    J    |    K    |    L    |    :    |     ESC     |
+// |   SYM  |   %    |    ^    |    [    |    ]    |    ~    |                   |    "    |    &    |    =    |    ,    |    .    |    SHIFT    |
+//   	                       |   NUM   |    ;	   |    /    |                   |    ;    |    /    |   NUM   |	       
+//                                          |   SPACE   |                               |   ENT   |   
       bindings = <
       &to 0       &kp Q  &kp W  &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P &kp BACKSPACE
       &kp ESC     &kp Z  &kp X  &kp C &kp V &kp B     &kp N &kp M &kp LT &kp GT &kp SLASH &kp ESC 
