@@ -40,12 +40,12 @@
 // |   STEN |   Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |    BCSP     |
 // |   UP   |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    :    |    ENTER    |
 // |   SYM  |   Z    |    X    |    C    |    V    |    B    |                   |    N    |    M    |    <    |    >    |    /    |     ESC     |
-//   	                       |   CTRL  |   ALT   |  Shift  |                   |   ENT   |   SPC   |   BCSP  |	      |   ALT   |
-//                                  |   tab   |                                       |    <    |    >    |
+//   	                       |  BCSP  |   SPC   |  Shift  |                    |   ENT   |   SPC   |   BCSP  |	      |   ALT   |
+//                                  |   tab   |                                       |   BCSP  |   TAB   |
       bindings = <
       &to 0       &kp Q  &kp W  &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P &kp BACKSPACE
       &mo SYM     &kp Z  &kp X  &kp C &kp V &kp B     &kp N &kp M &kp LT &kp GT &kp SLASH &kp ESC 
-            &kp LCTRL &kp LALT   &kp LSHIFT  	      &kp ENTER &kp SPACE &kp BACKSPACE
+            &kp BACKSPACE &kp SPACE   &kp LSHIFT  	      &kp ENTER &kp SPACE &kp BACKSPACE
      >;
 };
 
@@ -214,17 +214,17 @@
             key-positions = <9  10>;
             bindings = <&kp N9>;
 	    	};
-	combo_lt {
+	combo_bcsp {
             timeout-ms = <50>;
 	    layers = <1>;
             key-positions = <27  28>;
-            bindings = <&kp LT>;
+            bindings = <&kp BACKSPACE>;
 	    	};
-	combo_gt {
+	combo_tab {
             timeout-ms = <50>;
 	    layers = <1>;
             key-positions = <28  29>;
-            bindings = <&kp GT>;
+            bindings = <&kp TAB>;
 	    	};
         combo_alt {
             timeout-ms = <50>;
