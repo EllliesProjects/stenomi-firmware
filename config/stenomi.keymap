@@ -36,14 +36,14 @@
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |   Clear Part 1  |             													|   Clear Part 2  |
 //    		 	             										              |   Ctrl  |
-//	    |    1   |    2    |    3    |    4    |	5    |		         |    6    |    7    |    8    |    9    |    0    |	BCSP     |
-// |   STEN |   Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |       -     |
-// |   UP   |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    :    |       +     |
+//	    |    1   |    2    |    3    |    4    |	5    |		         |    6    |    7    |    8    |    9    |    0    |	         |
+// |   STEN |   Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |    BCSP     |
+// |   UP   |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    :    |    ENTER    |
 // |   SYM  |   Z    |    X    |    C    |    V    |    B    |                   |    N    |    M    |    <    |    >    |    /    |     ESC     |
-//   	                       |   CTRL  |   ALT   |  Shift  |                   |   ENT   |   SPC   |   BCSP  |	       
+//   	                       |   CTRL  |   ALT   |  Shift  |                   |   ENT   |   SPC   |   BCSP  |	      |   ALT   |
 //                                  |   tab   |                                       |    <    |    >    |
       bindings = <
-      &to 0       &kp Q  &kp W  &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P &kp MINUS
+      &to 0       &kp Q  &kp W  &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P &kp BACKSPACE
       &mo SYM     &kp Z  &kp X  &kp C &kp V &kp B     &kp N &kp M &kp LT &kp GT &kp SLASH &kp ESC 
             &kp LCTRL &kp LALT   &kp LSHIFT  	      &kp ENTER &kp SPACE &kp BACKSPACE
      >;
@@ -154,11 +154,11 @@
             key-positions = <10 22>;
             bindings = <&kp COLON>;
 	    	};
-	 combo_plus {
+	 combo_enter {
             timeout-ms = <50>;
 	    layers = <1>;
             key-positions = <11 23>;
-            bindings = <&kp PLUS>;
+            bindings = <&kp ENTER>;
 	    	};
 	 combo_1 {
             timeout-ms = <50>;
@@ -225,6 +225,12 @@
 	    layers = <1>;
             key-positions = <28  29>;
             bindings = <&kp GT>;
+	    	};
+        combo_alt {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <23  24>;
+            bindings = <&kp RALT>;
 	    	};
     };
        		   
