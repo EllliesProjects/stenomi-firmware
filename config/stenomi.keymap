@@ -232,6 +232,12 @@
             key-positions = <23  24>;
             bindings = <&kp RALT>;
 	    	};
+      combo_ctrl {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <10  11>;
+            bindings = <&kp LCTRL>;
+	    	};
     };
        		   
 
