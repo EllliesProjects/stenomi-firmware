@@ -34,15 +34,16 @@
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |   Clear Part 1  |             													|   Clear Part 2  |
-//		|    1	  |    2    |    3    |    4    |			      |    5    |    6    |    7    |    8    |    9       |	
-// |   NAV  |   Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |       -     |
+//    		 	             										              |   Ctrl  |
+//	    |    1   |    2    |    3    |    4    |	5    |		         |    6    |    7    |    8    |    9    |    0    |	BCSP     |
+// |   STEN |   Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |       -     |
 // |   UP   |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    :    |       +     |
-// |   ESC  |   Z    |    X    |    C    |    V    |    B    |                   |    N    |    M    |    ,    |    .    |    /    |     SHIFT   |
+// |   ESC  |   Z    |    X    |    C    |    V    |    B    |                   |    N    |    M    |    <    |    >    |    /    |     ESC     |
 //   	                       |   CTRL  |   ALT   |  Shift  |                   |   ENT   |   SPC   |   BCSP  |	       
 //                                  |   tab   |                                       |    <    |    >    |
       bindings = <
       &to 0       &kp Q  &kp W  &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P &kp MINUS
-      &kp ESC     &kp Z  &kp X  &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp PERIOD &kp SLASH &kp LSHIFT 
+      &kp ESC     &kp Z  &kp X  &kp C &kp V &kp B     &kp N &kp M &kp LT &kp GT &kp SLASH &kp ESC 
             &kp LCTRL &kp LALT   &kp LSHIFT  	      &kp ENTER &kp SPACE &kp BACKSPACE
      >;
 };
