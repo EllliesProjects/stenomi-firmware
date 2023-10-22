@@ -41,7 +41,7 @@
 // |   UP   |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    :    |    ENTER    |
 // |   SYM  |   Z    |    X    |    C    |    V    |    B    |                   |    N    |    M    |    <    |    >    |    /    |     ESC     |
 //   	                       |  BCSP  |   SPC   |  Shift  |                    |   ENT   |   SPC   |   BCSP  |	      |   ALT   |
-//                                  |   tab   |                                       |   BCSP  |   TAB   |
+//                                  |   CTRL  |  LALT  |                              |   BCSP  |   TAB   |
       bindings = <
       &to 0       &kp Q  &kp W  &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P &kp BACKSPACE
       &mo SYM     &kp Z  &kp X  &kp C &kp V &kp B     &kp N &kp M &kp LT &kp GT &kp SLASH &kp ESC 
