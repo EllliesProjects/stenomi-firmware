@@ -248,10 +248,16 @@
             key-positions = <3  15>;
             bindings = <&kp LPAR>;
 	    	};
-      combo_grave {
+      combo_otherpren {
             timeout-ms = <50>;
 	    layers = <2>;
             key-positions = <4  16>;
+            bindings = <&kp RPAR>;
+	    	};
+      combo_grave {
+            timeout-ms = <50>;
+	    layers = <2>;
+            key-positions = <5  17>;
             bindings = <&kp GRAVE>;
 	    	};
       combo_escape {
