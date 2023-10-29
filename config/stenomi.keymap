@@ -63,14 +63,14 @@
 //   	                       |   NUM   |    ;	   |    /    |                   |    ;    |    /    |   NUM   |	       
 //                                          |   SPACE   |                               |   ENT   |   
         bindings = <
-      &to 0       &kp EXCL   &kp AT     &kp LBRC &kp RBRC &kp PIPE2     &kp SQT &kp PLUS &kp MINUS &kp N9 &kp N0 &kp BACKSPACE
+      &to 0       &kp EXCL   &kp AT     &kp LBRC &kp RBRC &kp PIPE2     &kp SQT &kp PLUS &kp MINUS &kp FSLH &kp STAR &kp TAB
       &mo SYM     &kp Z  &kp X  &kp C &kp V &kp B     &kp N &kp M &kp LT &kp GT &kp SLASH &kp ESC 
-              &lt NUM BACKSPACE &kp SPACE   &kp LSHIFT  	      &kp ENTER &kp SPACE &kp BACKSPACE
+              &mo NUM &kp SEMI &kp FSLH  	&kp SEMI &kp FSLH &mo NUM
      >;
 };
 
 ////
-//&to 0       &kp EXCL   &kp AT     &kp LBRC &kp RBRC &kp PIPE2     &kp SQT &kp PLUS &kp MINUS &kp FSLASH &kp STAR &kp TAB
+//&to 0       &kp EXCL   &kp AT     &kp LBRC &kp RBRC &kp PIPE2     &kp SQT &kp PLUS &kp MINUS &kp FSLH &kp STAR &kp TAB
   //    &kp ESC     &kp PRCNT  &kp CARET  &kp LBRC &kp RBRC &kp TILDA     &kp DQT &kp AMPS &kp EQUAL &kp COMMA  &kp DOT  &kp LSHIFT 
                                         //&mo NUM &kp SEMI &kp FSLASH  	&kp SEMI &kp FSLASH &mo NUM
 
