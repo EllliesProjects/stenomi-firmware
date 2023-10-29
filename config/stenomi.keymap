@@ -36,8 +36,7 @@
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |   Clear Part 1  |             													|   Clear Part 2  |
-//    		 	             										              |   Ctrl  |
-//	    |    1   |    2    |    3    |    4    |	5    |		         |    6    |    7    |    8    |    9    |    0    |	         |
+//    		 	             										              |   Ctrl  |    |
 // |   STEN |   Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |    BCSP     |
 // |   UP   |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    :    |    ENTER    |
 // |   SYM  |   Z    |    X    |    C    |    V    |    B    |                   |    N    |    M    |    <    |    >    |    /    |     ESC     |
@@ -179,60 +178,6 @@
 	    layers = <1>;
             key-positions = <11 23>;
             bindings = <&kp ENTER>;
-	    	};
-	 combo_1 {
-            timeout-ms = <50>;
-	    layers = <1>;
-            key-positions = <1 2>;
-            bindings = <&kp N1>;
-	    	};
-	combo_2 {
-            timeout-ms = <50>;
-	    layers = <1>;
-            key-positions = <2 3>;
-            bindings = <&kp N2>;
-	    	};	
-	combo_3 {
-            timeout-ms = <50>;
-	    layers = <1>;
-            key-positions = <3 4>;
-            bindings = <&kp N3>;
-	    	};
-	combo_4 {
-            timeout-ms = <50>;
-	    layers = <1>;
-            key-positions = <4 5>;
-            bindings = <&kp N4>;
-	    	};
-	combo_5 {
-            timeout-ms = <50>;
-	    layers = <1>;
-            key-positions = <5 6>;
-            bindings = <&kp N5>;
-	    	};
-	combo_6 {
-            timeout-ms = <50>;
-	    layers = <1>;
-            key-positions = <6 7>;
-            bindings = <&kp N6>;
-	    	};
-	combo_7 {
-            timeout-ms = <50>;
-	    layers = <1>;
-            key-positions = <7 8>;
-            bindings = <&kp N7>;
-	    	};
-	combo_8 {
-            timeout-ms = <50>;
-	    layers = <1>;
-            key-positions = <8 9>;
-            bindings = <&kp N8>;
-	    	};
-	combo_9 {
-            timeout-ms = <50>;
-	    layers = <1>;
-            key-positions = <9  10>;
-            bindings = <&kp N9>;
 	    	};
 	combo_bcsp {
             timeout-ms = <50>;
