@@ -65,7 +65,7 @@
       bindings = <
       &to 0       &kp EXCL  &kp AT  &kp LBRC &kp RBRC &kp PIPE2     &kp SQT &kp PLUS &kp MINUS &kp FSLASH &kp STAR &kp TAB
       &kp ESC     &kp PRCNT  &kp CARET  &kp LBRC &kp RBRC &kp TILDA     &kp DQT &kp AMPS &kp EQUAL &kp COMMA &kp DOT &kp LSHIFT 
-            &kp LCTRL &kp LALT   &kp LSHIFT  	      &kp ENTER &kp SPACE &kp BACKSPACE
+            &mo NUM &kp SEMI &kp FSLASH  	      &kp SEMI &kp FSLASH &mo NUM
      >;
 };
 
