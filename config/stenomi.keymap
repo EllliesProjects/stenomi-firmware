@@ -202,6 +202,20 @@
             key-positions = <10  11>;
             bindings = <&kp LCTRL>;
 	    	};
+
+/// SYM LAYER
+      combo_space {
+            timeout-ms = <50>;
+	    layers = <2>;
+            key-positions = <25  26>;
+            bindings = <&kp SPACE>;
+	    	};
+      combo_enter {
+            timeout-ms = <50>;
+	    layers = <2>;
+            key-positions = <27  28>;
+            bindings = <&kp ENTER>;
+	    	};
     };
        		   
 
