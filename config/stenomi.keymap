@@ -62,10 +62,9 @@
 // |   SYM  |   %    |    ^    |    [    |    ]    |    ~    |                   |    "    |    &    |    =    |    ,    |    .    |    SHIFT    |
 //   	                       |   NUM   |    ;	   |    /    |                   |    ;    |    /    |   NUM   |	       
 //                                          |   SPACE   |                               |   ENT   |   
-      bindings = <
-      &to 0       &kp EXCL   &kp AT     &kp LBRC &kp RBRC &kp PIPE2     &kp SQT &kp PLUS &kp MINUS &kp FSLASH &kp STAR &kp TAB
-      &kp ESC     &kp PRCNT  &kp CARET  &kp LBRC &kp RBRC &kp TILDA     &kp DQT &kp AMPS &kp EQUAL &kp COMMA  &kp DOT  &kp LSHIFT 
-                                        &mo NUM &kp SEMI &kp FSLASH  	&kp SEMI &kp FSLASH &mo NUM
+        bindings = <
+      &to 0       &kp Q  &kp W  &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P &kp BACKSPACE
+      &kp ESC     &kp Z  &kp X  &kp C &kp V &kp B     &kp N &kp M &kp LT &kp GT &kp SLASH &kp ESC 
      >;
 };
 
