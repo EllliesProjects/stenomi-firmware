@@ -69,11 +69,6 @@
      >;
 };
 
-////
-//&to 0       &kp EXCL   &kp AT     &kp LBRC &kp RBRC &kp PIPE2     &kp SQT &kp PLUS &kp MINUS &kp FSLH &kp STAR &kp TAB
-  //    &kp ESC     &kp PRCNT  &kp CARET  &kp LBRC &kp RBRC &kp TILDA     &kp DQT &kp AMPS &kp EQUAL &kp COMMA  &kp DOT  &kp LSHIFT 
-                                        //&mo NUM &kp SEMI &kp FSLASH  	&kp SEMI &kp FSLASH &mo NUM
-
 		NUM_layer {
 
 // --------------------------------------------------------------------------------------------------------------------------------------	         |
