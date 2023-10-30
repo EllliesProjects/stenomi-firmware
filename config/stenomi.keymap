@@ -26,9 +26,9 @@
 //   	                          |    #    |    A    |     O     |                   |    E      |    U    |    #    |  
 
     bindings = <
-      &to 1       &kp PLV_SL  &kp PLV_TL  &kp PLV_PL  &kp PLV_HL  &kp PLV_ST  &kp PLV_ST   &kp PLV_FR &kp PLV_PR &kp PLV_LR &kp PLV_TR  &kp PLV_DR  
+      &to 1    &kp PLV_SL  &kp PLV_TL  &kp PLV_PL  &kp PLV_HL  &kp PLV_ST  &kp PLV_ST   &kp PLV_FR &kp PLV_PR &kp PLV_LR &kp PLV_TR  &kp PLV_DR  
       &mo SYM  &kp PLV_SL  &kp PLV_KL  &kp PLV_WL  &kp PLV_RL  &kp PLV_ST  &kp PLV_ST   &kp PLV_RR &kp PLV_BR &kp PLV_GR &kp PLV_SR  &kp PLV_ZR  
-                                         &kp PLV_NM  &kp PLV_A   &kp PLV_O   &kp PLV_E    &kp PLV_U  &kp PLV_NM
+                                       &kp PLV_NM  &kp PLV_A   &kp PLV_O   &kp PLV_E    &kp PLV_U  &kp PLV_NM
     >;
     
 };
@@ -44,9 +44,9 @@
 //                                  |   CTRL  |  LALT  |                              |   BCSP  |   TAB   |
 //                             |   NUM   |
       bindings = <
-      &to 0       &kp Q  &kp W  &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P &kp BACKSPACE
-      &mo SYM     &kp Z  &kp X  &kp C &kp V &kp B     &kp N &kp M &kp LT &kp GT &kp SLASH &kp ESC 
-            &lt NUM BACKSPACE &kp SPACE   &kp LSHIFT  	      &kp ENTER &kp SPACE &kp BACKSPACE
+      &to 0       &kp Q  &kp W  &kp E             &kp R       &kp T           &kp Y     &kp U     &kp I  &kp O  &kp P     &kp BACKSPACE
+      &mo SYM     &kp Z  &kp X  &kp C             &kp V       &kp B           &kp N     &kp M     &kp LT &kp GT &kp SLASH &kp ESC 
+                                &lt NUM BACKSPACE &kp SPACE   &kp LSHIFT      &kp ENTER &kp SPACE &kp BACKSPACE
      >;
 };
 
@@ -63,7 +63,7 @@
 //   	                       |   NUM   |    ;	   |    /    |                   |    ;    |    /    |   NUM   |	       
 //                                          |   SPACE   |                               |   ENT   |   
         bindings = <
-      &to 0       &kp EXCL   &kp AT     &kp LBRC &kp RBRC &kp PIPE     &kp SQT  &kp PLUS &kp MINUS &kp FSLH  &kp STAR &kp TAB
+      &to 0       &kp EXCL   &kp AT     &kp LBRC &kp RBRC &kp PIPE      &kp SQT  &kp PLUS &kp MINUS &kp FSLH  &kp STAR &kp TAB
       &mo SYM     &kp PRCNT  &kp CARET  &kp LBKT &kp RBKT &kp TILDE     &kp DQT  &kp AMPS &kp EQUAL &kp COMMA &kp DOT  &kp LSHIFT
                                         &mo NUM  &kp SEMI &kp FSLH  	&kp SEMI &kp FSLH &mo NUM
      >;
@@ -79,9 +79,9 @@
 //                                  |   CTRL  |  LALT  |                              |   BCSP  |   TAB   |
 //                             |   NUM   |
       bindings = <
-      &to 0       &kp N1  &kp N2  &kp N3 &kp N4 &kp N5     &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BACKSPACE
-      &mo SYM     &kp Z  &kp X  &kp C &kp V &kp B     &kp N &kp M &kp LT &kp GT &kp SLASH &kp ESC 
-            &lt NUM BACKSPACE &kp SPACE   &kp LSHIFT  	      &kp ENTER &kp SPACE &kp BACKSPACE
+      &to 0       &kp N1            &kp N2      &kp N3    &kp N4 &kp N5   &kp N6    &kp N7    &kp N8        &kp N9 &kp N0 &kp BACKSPACE
+      &mo SYM     &kp Z             &kp X       &kp C     &kp V &kp B     &kp N     &kp M     &kp LT        &kp GT &kp SLASH &kp ESC 
+            &l    &lt NUM BACKSPACE &kp SPACE   &kp LSHIFT  	          &kp ENTER &kp SPACE &kp BACKSPACE
      >;
 };
 	};
