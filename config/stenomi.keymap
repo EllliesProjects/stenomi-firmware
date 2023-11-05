@@ -89,13 +89,13 @@
    combo_ctrl {
             timeout-ms = <50>;
 	    layers = <1>;
-            key-positions = <25 26>;
+            key-positions = <24 25>;
             bindings = <&kp LCTRL>;
 	    	};
    combo_alt {
             timeout-ms = <50>;
 	    layers = <1>;
-            key-positions = <26 27>;
+            key-positions = <25 26>;
             bindings = <&kp LALT>;
 	    	}
 //// BT CLEAR
