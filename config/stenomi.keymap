@@ -81,7 +81,7 @@
       bindings = <
       &to 0       &kp N1            &kp N2      &kp N3    &kp N4 &kp N5   &kp N6    &kp N7    &kp N8        &kp N9 &kp N0 &kp BACKSPACE
       &mo SYM     &kp Z             &kp X       &kp C     &kp V &kp B     &kp N     &kp M     &kp LT        &kp GT &kp SLASH &kp ESC 
-            &l    &lt NUM BACKSPACE &kp SPACE   &kp LSHIFT  	          &kp ENTER &kp SPACE &kp BACKSPACE
+                  &lt NUM BACKSPACE &kp SPACE   &kp LSHIFT  	          &kp ENTER &kp SPACE &kp BACKSPACE
      >;
 };
 	};
