@@ -97,7 +97,7 @@
 	    layers = <1>;
             key-positions = <25 26>;
             bindings = <&kp LALT>;
-	    	}
+	    	};
 //// BT CLEAR
     combos {
         compatible = "zmk,combos";
