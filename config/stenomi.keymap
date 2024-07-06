@@ -37,14 +37,14 @@
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |   Clear Part 1  |             													|   Clear Part 2  |
 //    		 	             										              |   Ctrl  |    |
-// |   STEN |   Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |    BCSP     |
-// |   UP   |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    :    |    ENTER    |///?????????????
+// |   STEN |   Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |    PG_DN     |
+// |   UP   |   A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    :    |    PG_UP    |///?????????????
 // |   SYM  |   Z    |    X    |    C    |    V    |    B    |                   |    N    |    M    |    <    |    >    |    /    |     ESC     |
 //   	                       |  CTRL   |   SPC   |  Shift  |                   |   ENT   |   SPC   |   BCSP  |	      |   ALT   |
 //                                  |   CTRL  |  LALT  |                              |   BCSP  |   TAB   |
 //                             |   NUM   |
       bindings = <
-      &to 0       &kp Q  &kp W  &kp E             &kp R       &kp T           &kp Y     &kp U     &kp I  &kp O  &kp P     &kp BACKSPACE
+      &to 0       &kp Q  &kp W  &kp E             &kp R       &kp T           &kp Y     &kp U     &kp I  &kp O  &kp P     &kp PG_DN
       &mo SYM     &kp Z  &kp X  &kp C             &kp V       &kp B           &kp N     &kp M     &kp LT &kp GT &kp SLASH &kp ESC 
                                 &lt NUM LCTRL &kp SPACE   &kp LSHIFT      &kp ENTER &kp SPACE &kp BACKSPACE
      >;
@@ -189,7 +189,7 @@
             timeout-ms = <50>;
 	    layers = <1>;
             key-positions = <11 23>;
-            bindings = <&kp ENTER>;
+            bindings = <&kp PG_UP>;
 	    	};
 	combo_bcsp {
             timeout-ms = <50>;
