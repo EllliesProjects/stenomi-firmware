@@ -14,12 +14,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: zmkfirmware/zmk-build-arm:2.5
+      image: zmkfirmware/zmk-build-arm:stable  # Changed from 2.5 to stable
     strategy:
       matrix:
         include:
-          # Add your specific keyboard configuration here
-          # Example for Corne:
           - board: nice_nano_v2
             shield: corne_left
           - board: nice_nano_v2
@@ -31,7 +29,7 @@ jobs:
       - name: Checkout ZMK
         uses: actions/checkout@v4
         with:
-          repository: EllliesProjects/zmk
+          repository: EllliesProjects/zmk  # Replace with your username
           ref: plover-hid-hog-attempt
           path: zmk
           
