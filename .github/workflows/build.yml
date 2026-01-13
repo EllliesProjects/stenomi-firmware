@@ -31,7 +31,7 @@ jobs:
       - name: Checkout ZMK
         uses: actions/checkout@v4
         with:
-          repository: ElliesProjects/zmk
+          repository: EllliesProjects/zmk
           ref: plover-hid-hog-attempt
           path: zmk
           
