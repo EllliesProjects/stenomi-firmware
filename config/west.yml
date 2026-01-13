@@ -2,11 +2,11 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: dnaq
-      url-base: https://github.com/dnaq
+    - name: EllliesProjects
+      url-base: https://github.com/EllliesProjects
   projects:
     - name: zmk
-      remote: dnaq
+      remote: EllliesProjects
       revision: plover-hid-hog-attempt
       import: app/west.yml
   self:
